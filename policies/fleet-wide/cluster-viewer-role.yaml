@@ -25,6 +25,9 @@ roleRef:
   kind: ClusterRole
   name: fleet-cluster-viewer
 subjects:
-  - kind: Group
-    name: system:authenticated
-    apiGroup: rbac.authorization.k8s.io
+  - kind: ServiceAccount
+    name: fleet-cluster-viewer
+    namespace: kube-system
+  - kind: ServiceAccount
+    name: kubeagents-platform-agent
+    namespace: kubeagents-system
