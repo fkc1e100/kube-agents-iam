@@ -1,0 +1,16 @@
+# OS & Editor
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Secrets & Keys (Never commit credentials)
+*.pem
+*.key
+*.crt
+*credential*
+*secret*
+!*.yaml
+!*.yml
