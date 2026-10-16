@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: kubeagents-platform-agent
-  namespace: kubeagents-system
-  annotations:
-    iam.gke.io/gcp-service-account: kubeagents-platform-gsa@gca-gke-test.iam.gserviceaccount.com

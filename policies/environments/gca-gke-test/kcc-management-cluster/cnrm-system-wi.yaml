@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: cnrm-controller-manager
+  namespace: cnrm-system
+  annotations:
+    iam.gke.io/gcp-service-account: kcc-system-gsa@gca-gke-test.iam.gserviceaccount.com

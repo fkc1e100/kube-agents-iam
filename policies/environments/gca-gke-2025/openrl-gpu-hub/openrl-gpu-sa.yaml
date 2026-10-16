@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: openrl-gpu-sa
+  namespace: openrl-worker-system
+  annotations:
+    iam.gke.io/gcp-service-account: openrl-worker-gsa@gca-gke-2025.iam.gserviceaccount.com
